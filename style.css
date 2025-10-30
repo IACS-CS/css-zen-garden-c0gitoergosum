@@ -81,4 +81,18 @@ a:focus {
   outline: none;
   box-shadow: 0 1px 0 rgba(255, 77, 77, 0.25);
 }
+
+.page-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -40px;
+  width: 80px;
+  height: 80px;
+  background-image: url("images/ornament.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none; /* decorative only — won't interfere with interaction */
+  z-index: 2;
+}
 /* End of AI-generated code */

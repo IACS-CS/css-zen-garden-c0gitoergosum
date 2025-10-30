@@ -1,10 +1,8 @@
 /********************************** 
-* Design by:  [your name]
-* Design name:  [your design name]
+* Design by:  Jordan Troughton
+* Design name:  Christmas!!!
 * 
-* License: [license name - e.g. MIT if you want to let others
-* use the design with attribution, or All Rights Reserved if you
-* don't want others to use the design]
+* License: Free use.
 * 
 * Acknowledgments/Sources:
 * - 
@@ -14,36 +12,54 @@
 
 /* Starter code -- feel free to delete */
 
-/* Typography */
-
-/* Get your own import URL from Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+body {
+  background: radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px),
+    linear-gradient(to bottom, #b3e0ff, #004466);
+  background-position: 0 0, 25px 25px, 0 0;
+  background-size: 50px 50px, 50px 50px, cover;
+  background-attachment: fixed;
+  color: #black;
+}
 .page-wrapper {
-  /* Main font */
-  font-family: Poppins, sans-serif;
+  max-width: 900px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 25px;
+rgba(0,0,0,0.15);
+  padding: 60px 50px;
+  z-index: 1;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* Header font */
-  font-family: "Dancing Script", cursive;
+.iacs {
+  animation-name: fade-color;
+  animation-duration: 2s; 
+  animation-iteration-count: infinite;
+  animation-direction: alternate; 
 }
 
-/* Background */
-#css-zen-garden {
-  background: linear-gradient(45deg, #f3f3f3 0%, #c8c8c8 100%);
+@keyframes fade-color {
+  0% {
+    color: red;
+  }
+  100% {
+    color: green;
+  }
 }
-/* Page wrapper */
-.page-wrapper {
-  box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid #ccc;
-  padding: 1em;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  max-width: 960px;
-  margin: 0 auto;
+.mountains-of-christmas-regular {
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mountains-of-christmas-bold {
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+p {
+  font-family: Helvetica
+}
+h1 {
+  font-family: Mountains of Christmas
 }

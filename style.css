@@ -63,3 +63,22 @@ p {
 h1 {
   font-family: Mountains of Christmas
 }
+/* ...existing code... */
+
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt
+   "Make all links red instead of default blue" */
+a,
+a:link,
+a:visited {
+  color: #b30000; /* festive red */
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: #ff4d4d;
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(255, 77, 77, 0.25);
+}
+/* End of AI-generated code */

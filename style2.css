@@ -53,6 +53,7 @@ body {
   position: relative;
   animation-name: myAnimation;
   animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes myAnimation {
@@ -98,14 +99,15 @@ body {
   }
 }
 /* image using only css */
-page-wrapper::before {
-  content: "";
+.page-wrapper::before {
+  content: " ";
   position: absolute;
   left: 20px;
   top: -40px;
   width: 80px;
   height: 80px;
-  background-image: url("/workspaces/css-zen-garden-c0gitoergosum/tiger.jpg");
+  display: block;
+  background-image: url("tiger.jpg");
   background-repeat: no-repeat;
 }
 /* okay what now */

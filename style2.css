@@ -122,3 +122,13 @@ page-wrapper::before {
 .preamble p {
   color: #deadde; /* another delightful color */
 }
+/* making all links really large and purple. */
+a, a:link, a:visited {
+  color: purple;
+  font-size: 24px;
+  text-decoration: none;
+} 
+a:hover, a:focus {
+  color: violet;
+  text-decoration: underline;
+}

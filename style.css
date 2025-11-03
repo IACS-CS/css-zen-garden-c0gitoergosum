@@ -81,18 +81,27 @@ a:focus {
   outline: none;
   box-shadow: 0 1px 0 rgba(255, 77, 77, 0.25);
 }
-
-.page-wrapper::before {
-  content: "";
-  position: absolute;
-  left: 20px;
-  top: -40px;
-  width: 80px;
-  height: 80px;
-  background-image: url("images/ornament.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  pointer-events: none; /* decorative only — won't interfere with interaction */
-  z-index: 2;
-}
 /* End of AI-generated code */
+
+/* Beginning of regular code -- no ai used below this line */
+.sidebar {
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: #b9e2aa; 
+  overflow-x: hidden; 
+  padding-top: 20px;
+}
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+}
+.sidebar a:hover {
+    color: #e93e3e;
+    background-color: #fff;
+} 
